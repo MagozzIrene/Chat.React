@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    max-width: 320px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+.message {
+    display: flex;
+    max-width: 80%;
+}
+
+.message.yo {
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+.message.usuario {
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+
+.message-content {
+    padding: 0.5rem 0.7rem;
+    border-radius: 1.125rem;
+    position: relative;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.message.yo .message-content {
+    background-color: #DCF8C6;
+    color: #223541;
+    border-bottom-right-radius: 0.125rem;
+}
+
+.message.usuario .message-content {
+    background-color: #fff;
+    color: #223541;
+    border-bottom-left-radius: 0.125rem;
+}
+
+.message-text {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.message-meta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.25rem;
+    margin-top: 0.25rem;
+    font-size: 0.5rem;
+}
+
+.message.yo .message-meta {
+    color: #73777D;
+}
+
+.message.usuario .message-meta {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.message-status {
+    font-size: 0.55rem;
+    line-height: 1;
+}
+
+.message-status.visto {
+    color: #4fc3f7;
+}
+
+.message-status.no-visto,
+.message-status.no-recibido {
+    color: #73777D;
+}
