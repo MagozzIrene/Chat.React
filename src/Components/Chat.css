@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: sans-serif;
-    font-weight: 100;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
 }
 
 .chat-container {
@@ -35,7 +35,6 @@
 .message-content {
     padding: 0.5rem 0.7rem;
     border-radius: 1.125rem;
-    position: relative;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
