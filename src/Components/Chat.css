@@ -33,20 +33,22 @@
 }
 
 .message-content {
-    padding: 0.5rem 0.7rem;
-    border-radius: 1.125rem;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 0.6rem 0.8rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #223541;
 }
 
+/* Estilo para mensajes del usuario actual */
 .message.yo .message-content {
     background-color: #DCF8C6;
-    color: #223541;
     border-bottom-right-radius: 0.125rem;
 }
 
+/* Estilo para mensajes del otro usuario */
 .message.usuario .message-content {
     background-color: #fff;
-    color: #223541;
     border-bottom-left-radius: 0.125rem;
 }
 
@@ -84,4 +86,75 @@
 .message-status.no-visto,
 .message-status.no-recibido {
     color: #73777D;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    padding: 0;
+}
+
+.chat-form {
+    display: flex;
+    padding: 0.5rem;
+    background-color: #8b8888;
+    position: sticky;
+    bottom: 0;
+    gap: 0.5rem;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1.125rem;
+    border: 1px solid #ddd;
+    font-size: 0.875rem;
+}
+
+.chat-submit {
+    background-color: #DCF8C6;
+    color: #223541;
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+.messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.message {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

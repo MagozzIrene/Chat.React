@@ -1,7 +1,7 @@
 import React from 'react';
 import './Chat.css';
 
-const Chat = ({mensajes}) => {
+const Chat = ({mensajes, onEliminar}) => {
     return (
         <div className='chat-container'>
             {mensajes.map((mensaje) => (
@@ -20,6 +20,7 @@ const Chat = ({mensajes}) => {
                                 </span>
                             )}
                         </div>
+                        <button onClick={() => onEliminar(mensaje.id)} className='delete-btn'>Eliminar</button>
                     </div>
                 </div>
             )) 
