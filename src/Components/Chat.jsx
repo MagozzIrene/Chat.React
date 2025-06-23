@@ -19,8 +19,8 @@ const Chat = ({mensajes, onEliminar}) => {
                                     mensaje.status === 'no-visto' ? '✓' : ''}
                                 </span>
                             )}
+                            <button onClick={() => onEliminar(mensaje.id)} className='delete-btn'>x</button>
                         </div>
-                        <button onClick={() => onEliminar(mensaje.id)} className='delete-btn'>Eliminar</button>
                     </div>
                 </div>
             )) 
