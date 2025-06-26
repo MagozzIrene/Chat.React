@@ -39,13 +39,11 @@
     color: #223541;
 }
 
-/* Estilo para mensajes del usuario actual */
 .message.own .message-content {
     background-color: #DCF8C6;
     border-bottom-right-radius: 0.125rem;
 }
 
-/* Estilo para mensajes del otro usuario */
 .message.other .message-content {
     background-color: #fff;
     border-bottom-left-radius: 0.125rem;
